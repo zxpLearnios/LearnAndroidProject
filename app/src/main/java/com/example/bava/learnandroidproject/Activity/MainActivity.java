@@ -1,22 +1,21 @@
-package com.example.bava.learnandroidproject;
+package com.example.bava.learnandroidproject.Activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.SearchView;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.bava.learnandroidproject.Config.Const;
+import com.example.bava.learnandroidproject.R;
 
-import org.w3c.dom.Text;
-
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends PTBaseActivity {
 
   protected TextView textView;
   private  EditText nameEdit;
@@ -33,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     nameEdit = (EditText)findViewById(R.id.nameEdit);
     nameEdit.addTextChangedListener(editTextListener);
   }
+
 
 
   public void clickAction(View view) {

@@ -5,18 +5,31 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.bava.learnandroidproject.MainActivity"
-    android:background="@color/colorPrimaryDark">
+    tools:context="com.example.bava.learnandroidproject.Activity.MainActivity">
 
+
+    <!--<android.support.design.widget.BottomNavigationView-->
+        <!--android:id="@+id/navigation"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginEnd="0dp"-->
+        <!--android:layout_marginStart="0dp"-->
+        <!--android:background="?android:attr/windowBackground"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:menu="@menu/navigation" />-->
 
     <RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
 
             <TextView
                 android:id="@+id/textView"
@@ -31,23 +44,21 @@
 
             <EditText
                 android:id="@+id/nameEdit"
-                android:hint="请输入手机号"
-                android:textStyle="italic"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:layout_marginLeft="20dp"
                 android:layout_toRightOf="@+id/textView"
+
+                android:hint="请输入手机号"
+                android:textStyle="italic"
 
                 />
         </LinearLayout>
 
 
-
-
         <Button
             android:id="@+id/button"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            style="@style/loginBtn_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
@@ -62,18 +73,5 @@
             tools:layout_editor_absoluteY="202dp" />
 
     </RelativeLayout>
-
-
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="0dp"
-        android:layout_marginStart="0dp"
-        android:background="?android:attr/windowBackground"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/navigation" />
 
 </android.support.constraint.ConstraintLayout>

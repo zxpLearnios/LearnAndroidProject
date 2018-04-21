@@ -8,4 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- 登录按钮 -->
+    <style name="loginBtn_style">
+        <item name="android:background">@drawable/login_btn_shape</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
 </resources>
